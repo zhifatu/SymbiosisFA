@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+title: "SymbiosisFA: Formalization and Implementation of FALaw Theory"
+authors:
+  - given-names: Huaiwei
+    family-names: Sun
+    affiliation: "Independent Researcher"
+    email: "zhifatu@outlook.com"
+    orcid: "https://orcid.org/your-orcid-if-any"
+    country: CN
+    city: Xuzhou
+    region: Jiangsu
+version: 1.0.0
+doi: 10.0000/zenodo.0000000  # 如果你有DOI
+date-released: 2025-01-30
+url: "https://github.com/zhifatu/SymbiosisFA"
+repository-code: "https://github.com/zhifatu/SymbiosisFA"
+abstract: "A complete mathematical formalization and computational implementation of FALaw Theory (秩法图理论), an original framework integrating Chinese philosophical concepts with modern dynamical systems theory to model symbiotic coordination dynamics in complex adaptive systems."
+keywords:
+  - complex systems
+  - dynamical systems
+  - social dynamics
+  - Chinese philosophy
+  - mathematical modeling
+  - symbiotic coordination
+license: Apache-2.0

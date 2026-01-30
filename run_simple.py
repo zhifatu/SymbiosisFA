@@ -54,6 +54,19 @@ try:
     print(f"模拟完成: {results['num_steps']} 步, "
           f"最终共生度: {results['coordination_history'][-1]:.3f}")
 
+    # ============ 关键修改部分 ============
+    # 1. 设置字体但不使用'Agg'后端
+    import matplotlib
+
+    # 设置英文字体，避免下标字符问题
+    matplotlib.rcParams['font.sans-serif'] = ['DejaVu Sans', 'Arial', 'Liberation Sans']
+    matplotlib.rcParams['axes.unicode_minus'] = False
+
+    # 重新导入plt以确保设置生效
+    import matplotlib.pyplot as plt
+
+    # =====================================
+
     # 简单可视化
     plt.figure(figsize=(10, 6))
 
@@ -82,17 +95,23 @@ try:
     plt.title('总原力演化')
     plt.grid(True, alpha=0.3)
 
-    # 坤转强度
+    # 坤转强度 - 使用_8而不是下标₈
     plt.subplot(2, 2, 4)
     plt.plot(results['time_series'], results['psi_history'][:, 7], 'purple')
     plt.xlabel('时间')
-    plt.ylabel('坤转强度 ψ₈')
+    plt.ylabel('坤转强度 ψ_8')  # 关键修改：ψ₈ → ψ_8
     plt.title('坤转倾向')
     plt.grid(True, alpha=0.3)
 
     plt.tight_layout()
+
+    # 先保存文件
     plt.savefig('test_results.png', dpi=150)
     print(f"图表已保存为 test_results.png")
+
+    # 再显示图表
+    print("正在显示图表...")
+    plt.show()
 
     print("\n✓ 所有测试通过！程序运行正常。")
 
