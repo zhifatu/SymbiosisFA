@@ -1,0 +1,54 @@
+@"
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual Environment
+.venv/
+venv/
+env/
+ENV/
+.env
+
+# 备份文件
+*.backup
+*.backup.*
+*.bak
+*.orig
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# 测试产物
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.cover
+.tox/
+
+# 构建产物
+dist/
+build/
+*.egg-info/
+*.egg
+
+# 研究产物（不提交到主分支）
+research/archive/
+research/*.png
+research/*.json
+research/*.log
+
+# 操作系统
+Thumbs.db
+.DS_Store
+"@ | Out-File -FilePath .gitignore -Encoding utf8
+
+Write-Host "✅ .gitignore 创建成功！" -ForegroundColor Green

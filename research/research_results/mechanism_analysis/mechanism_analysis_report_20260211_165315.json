@@ -1,0 +1,79 @@
+{
+  "metadata": {
+    "study_type": "秩法图理论机理分析",
+    "timestamp": "20260211_165315",
+    "optimal_parameters": {
+      "base_excitation": 0.85,
+      "pressure_sensitivity": 0.8,
+      "adaptive_capacity": 0.69,
+      "resilience_factor": 1.89
+    }
+  },
+  "mathematical_properties": {},
+  "parameter_sensitivity": {
+    "b": {
+      "parameter_name": "b",
+      "base_value": 0.85,
+      "test_range": [
+        0.595,
+        1.105
+      ],
+      "avg_coefficient_of_variation": 0.21213203435596428,
+      "avg_variation_percent": 18.000000000000004,
+      "sensitivity_rank": 1,
+      "interpretation": "中等敏感，基础激发，18.0%变化影响整体水平"
+    },
+    "s": {
+      "parameter_name": "s",
+      "base_value": 0.8,
+      "test_range": [
+        0.5599999999999999,
+        1.04
+      ],
+      "avg_coefficient_of_variation": 0.05610384605985792,
+      "avg_variation_percent": 5.171387564699932,
+      "sensitivity_rank": 3,
+      "interpretation": "低敏感，压力敏感性，5.2%变化影响抑制强度"
+    },
+    "a": {
+      "parameter_name": "a",
+      "base_value": 0.69,
+      "test_range": [
+        0.48299999999999993,
+        0.8969999999999999
+      ],
+      "avg_coefficient_of_variation": 0.055091717900679384,
+      "avg_variation_percent": 5.340090361050899,
+      "sensitivity_rank": 2,
+      "interpretation": "低敏感，适应能力，5.3%变化影响增强效应"
+    },
+    "r": {
+      "parameter_name": "r",
+      "base_value": 1.89,
+      "test_range": [
+        1.323,
+        2.457
+      ],
+      "avg_coefficient_of_variation": 0.030882028750564977,
+      "avg_variation_percent": 3.2408620367062966,
+      "sensitivity_rank": 4,
+      "interpretation": "低敏感，恢复速度，3.2%变化影响适应速度"
+    }
+  },
+  "physical_meaning": {},
+  "key_insights": [
+    "最敏感参数: b (变化影响18.0%)"
+  ],
+  "recommendations": {
+    "for_theorists": "深入研究函数的数学特性，探索更一般的理论形式",
+    "for_practitioners": "基于参数敏感性，优先优化最影响系统的参数",
+    "for_researchers": "开展实证研究验证理论的预测能力",
+    "for_developers": "开发基于理论的诊断和优化工具",
+    "next_steps": [
+      "进行多压力源扩展研究",
+      "开发参数测量方法",
+      "构建预测和预警系统",
+      "开展跨领域应用研究"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "如果您在学术工作中使用秩法图，请引用此版本。"
+title: "秩法图：万物共生的形式化系统"
+version: 1.0.0
+date-released: 2026-02-11
+authors:
+  - family-names: "sun"
+    given-names: "huaiwei"
+    orcid: ""  # 如果有ORCID可以填，没有就留空
+repository-code: "https://github.com/zhifatu/SymbiosisFA"
+license: MIT
+keywords:
+  - "系统科学"
+  - "复杂系统"
+  - "共生理论"
+  - "秩法图"
+  - "原力动力学"
+  - "八元素"
+  - "临界点 R=0.5"
+abstract: "秩法图是一个从中国哲学土壤生长出来的系统科学框架。用八个元素（乾定、射、陷、离、界、散、换、坤转）刻画系统底层结构，用原力守恒约束演化过程，用临界点 R=0.5 标记量变到质变的分界线，用六维可能性空间描述系统的未来态，用四种张力场诊断系统的健康度。这是可计算、可验证、可校准的数学体系。"
